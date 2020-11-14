@@ -1,0 +1,584 @@
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/*side bar*/
+
+
+.more{
+    display: none;
+  }
+
+
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a{
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .visit{
+    text-align: center;
+}
+  
+ 
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .sidenav p{
+    padding: 6px 6px 6px 32px;
+    color: #e6e6e6;
+    font-size: 20px;
+  }
+
+  .sidenav .med{
+      font-size: 25px;
+      color: cornsilk;
+      text-decoration: underline;
+  }
+
+  .sidenav .med:hover, h1:hover, h2:hover, h3:hover {
+    color: rgb(248, 180, 194);
+    text-shadow: 2px 2px 4px #b39d9d;
+    transition: 1000ms;
+  }
+
+  
+
+  /*main*/
+
+  .main {
+    margin-left: 400px; /* Same as the width of the sidenav */
+    background: linear-gradient(rgb(255, 145, 145), rgb(250, 207, 178))
+  }
+
+  h1{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 50px;
+      color: rgb(250, 240, 202);
+      background-color: #111;
+      padding-top: 10px;
+      padding-bottom: 5px
+  }
+
+h1 img{
+    width:50px;
+}
+
+
+.med, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(250, 240, 202);
+}
+
+
+  .boxx h2{
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .boxx p{
+    padding: 10px 50px;
+    font-size: 20px;
+  }
+
+.boxx{
+    width:90%;
+    background-color: #111;
+    margin: 25px auto;
+    color: white;
+    border-radius: 6px;
+}
+
+.main .coff {
+    background-image: url("images/coff.jpg");
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+    padding-top:3%;
+}
+
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    margin: 25px 0;
+}
+
+
+
+
+/* 3D Transform. Craeted refering to Dudley Storey's Pen: https://codepen.io/dudleystorey/pen/KFLJp */
+.tdimension {
+	width: 300px;
+	height: 300px;
+	margin: 20px auto 40px auto;
+	perspective: 1000px;
+}
+.tdimension a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(images/woman.jpg);
+    background-size: cover;
+	transform-style: preserve-3d;
+	transform: rotateX(0deg);
+    transition: all 0.8s;	
+    border-radius: 200%;
+}
+.tdimension:hover a {
+    transform: rotateX(20deg); 	
+    transform: rotatey(20deg); 
+}	
+.tdimension a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));    
+   	transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+
+.menu{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(31, 29, 29);
+    margin-bottom: 0%;
+}
+
+.coll1{
+    flex: 1;
+}
+
+.coll2{
+    flex: 1;
+    text-align: right;
+}
+
+.back{
+    width: 80%;
+    background-color: rgb(31, 29, 29);
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+
+
+
+
+.colll1{
+    flex:1;
+    height: 400px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.colll1 p{
+    padding:0;
+}
+.colll1 img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.colll2{
+    flex:1;
+    margin-top: 5%;
+    padding-right: 0px;
+}
+
+.colll2 img{
+    width: 80%;
+    border-radius: 200%;
+}
+
+
+.latte{
+    width:100%;
+}
+
+.latte img{
+    width:100%;
+}
+
+
+
+
+
+/*footer and media*/
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: cornsilk;
+    background-color: #111;
+    padding-top: 10px;
+    padding-bottom: 5px
+}
+
+
+
+
+/*tablet*/ 
+@media screen and (min-width:900px) and (max-width:1168px) {
+
+   
+
+
+    .colll1{
+        width: 95%;
+        padding-left: 5vw;
+    }
+
+    .colll2{
+        width: 98%;
+        padding-left: 18vw;
+        padding-bottom: 20px;
+    }
+
+    .main .coff {
+        padding-top: 0%;
+        height: 50%; 
+    }
+
+    .coff p{
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    .main {
+        margin-left: 300px; /* Same as the width of the sidenav */
+        background: linear-gradient(rgb(255, 145, 145), rgb(250, 207, 178))
+      }
+
+    .sidenav {
+        width: 300px;
+     
+      }
+
+      .sidenav p{
+          font-size: 17px;
+      }
+
+      .boxx{
+          width:98%;
+      }
+
+      .menu p{
+          padding: 5px;
+          margin: 0px;
+      }
+
+      .tdimension {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto 40px auto;
+        perspective: 1000px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    h1 img{
+        width:20px;
+    }
+    
+    
+  }
+
+  @media screen and (min-width:550px) and (max-width:899px) {
+  
+    .main .coff {
+        padding-top: 0%;
+        height: 50%;
+        
+    }
+
+    .coff p{
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+
+    .main {
+        margin-left: 0; /* Same as the width of the sidenav */
+        background: linear-gradient(rgb(255, 145, 145), rgb(250, 207, 178))
+      }
+
+    .sidenav {
+        display: none;
+     
+      }
+
+    .more{
+        display: inline;
+        border: white solid 2px;
+        border-radius: 8px;
+        margin: 25px auto;
+        width: 500px;
+      }
+
+      .boxx{
+          width:98%;
+      }
+
+      .menu p{
+          padding: 5px;
+          margin: 0px;
+      }
+
+      .tdimension {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        perspective: 1000px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    h1 img{
+        width:20px;
+    }
+
+    .more p{
+        padding: 6px 6px 6px 32px;
+        color: #e6e6e6;
+        font-size: 20px;
+      }
+    
+      .more .med{
+          font-size: 25px;
+          color: rgb(250, 240, 202);
+          text-decoration: underline;
+          text-align: center;
+      }
+    
+      .more .med:hover, h1:hover, h2:hover, h3:hover {
+        color: rgb(248, 180, 194);
+        text-shadow: 2px 2px 4px #b39d9d;
+        transition: 1000ms;
+      }
+
+     
+
+
+
+}
+
+
+  @media screen and (min-width:451px) and (max-width:549px) {
+  
+    .main .coff {
+        padding-top: 0%;
+        height: 50%;
+        
+    }
+
+    .coff p{
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+
+    
+
+    .main {
+        margin-left: 0; /* Same as the width of the sidenav */
+        background: linear-gradient(rgb(255, 145, 145), rgb(250, 207, 178))
+      }
+
+    .sidenav {
+        display: none;
+     
+      }
+
+      .location{
+        display: inline;
+        border: white solid 2px;
+        border-radius: 8px;
+        margin: 25px auto;
+        width: 400px;
+      }
+
+      .boxx{
+          width:98%;
+      }
+
+      .menu p{
+          padding: 5px;
+          margin: 0px;
+      }
+
+      .tdimension {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        perspective: 1000px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    h1 img{
+        width:20px;
+    }
+
+    .more p{
+        padding: 6px 6px 6px 32px;
+        color: #e6e6e6;
+        font-size: 20px;
+      }
+    
+      .more .med{
+          font-size: 25px;
+          color: rgb(250, 240, 202);
+          text-decoration: underline;
+          text-align: center;
+      }
+    
+      .more .med:hover, h1:hover, h2:hover, h3:hover {
+        color: rgb(248, 180, 194);
+        text-shadow: 2px 2px 4px #b39d9d;
+        transition: 1000ms;
+      }
+
+
+      .more{
+        display: inline;
+        border: white solid 2px;
+        border-radius: 8px;
+        margin: 25px auto;
+        width: 500px;
+      }
+
+
+  }
+
+/*Mobile*/ 
+  @media screen and (max-width:451px) {
+
+    .main .coff {
+        padding-top: 0%;
+        height: 50%;
+        
+    }
+
+    .coff p{
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+
+    .main {
+        margin-left: 0; /* Same as the width of the sidenav */
+        background: linear-gradient(rgb(255, 145, 145), rgb(250, 207, 178))
+      }
+
+    .sidenav {
+        display: none;
+     
+      }
+
+      .location{
+        display: inline;
+        border: white solid 2px;
+        border-radius: 8px;
+        margin: 25px auto;
+        display: 300px;
+      }
+
+      .boxx{
+          width:98%;
+      }
+
+      .menu{
+          width: 100%;
+      }
+
+      .back{
+        width: 100%;
+      }
+      .menu p{
+          padding: 5px;
+          margin: 0px;
+      }
+
+      .tdimension {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        perspective: 1000px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    h1 img{
+        width:20px;
+    }
+
+    .more p{
+        padding: 6px 6px 6px 32px;
+        color: #e6e6e6;
+        font-size: 20px;
+      }
+    
+      .more .med{
+          font-size: 25px;
+          color: rgb(250, 240, 202);
+          text-decoration: underline;
+          text-align: center;
+      }
+    
+      .more .med:hover, h1:hover, h2:hover, h3:hover {
+        color: rgb(248, 180, 194);
+        text-shadow: 2px 2px 4px #b39d9d;
+        transition: 1000ms;
+      }
+
+    
+  
+      .main p{
+          padding: 5px;
+      }
+
+      .more{
+        display: inline;
+        border: white solid 2px;
+        border-radius: 8px;
+        margin: 25px auto;
+        width: 500px;
+      }
+    
+  }
+
